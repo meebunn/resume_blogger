@@ -1,0 +1,74 @@
+:root {
+  --bg: #faf7f2;
+  --bg-accent: #ede5d9;
+  --surface: #fff9f3;
+  --surface-2: #f5ead8;
+  --text: #0d0a07;
+  --muted: #4a3f35;
+  --accent: #d84315;
+  --accent-2: #0288d1;
+  --accent-3: #1565c0;
+  --border: rgba(13, 10, 7, 0.15);
+  --shadow: 0 12px 28px rgba(216, 67, 21, 0.12);
+  --shadow-lg: 0 24px 48px rgba(13, 10, 7, 0.2);
+  --radius: 18px;
+  --section-gap: 96px;
+  --container: 1100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 5%, rgba(216, 67, 21, 0.18), transparent 40%),
+    radial-gradient(circle at 90% 15%, rgba(2, 136, 209, 0.15), transparent 35%),
+    radial-gradient(circle at 50% 100%, rgba(21, 101, 192, 0.12), transparent 45%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-accent) 100%);
+  line-height: 1.6;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Source Serif 4', 'Space Grotesk', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background: rgba(216, 67, 21, 0.25);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+}
